@@ -3,14 +3,15 @@ import CardImage from './CardImage'
 import CardName from './CardName'
 import Togle from './Togle'
 import { useContext } from "react"
-import { LayoutContext } from "../Context/LayoutContext";
+// import { LayoutContext } from "../Context/LayoutContext";
+import {LayoutContextNew} from '../Context/LayoutContextNew'
 
 
 const Card = () => {
-  
-  const { nightMode, night, day } = useContext(LayoutContext); 
 
-  console.log("nightMode", night);
+  const { nightMode, night, day } = useContext(LayoutContextNew); 
+
+  console.log("nightMode", nightMode);
 
   const mood = nightMode ? night : day;
   return (

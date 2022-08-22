@@ -1,9 +1,11 @@
 import { useContext } from "react"
-import { mainContext } from "../Context/mainContext"
+// import { mainContext } from "../Context/mainContext"
+import {MainContextNew} from "../Context/mainContext";
 
 const CardImage = () => {
 
-  const context = useContext(mainContext);
+  const context = useContext(MainContextNew);
+  console.log("ini context", context);
 
   return (
     <div>

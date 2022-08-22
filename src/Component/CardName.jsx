@@ -1,12 +1,13 @@
 import {useContext} from 'react'
-import { mainContext } from '../Context/mainContext'
-import { LayoutContext } from '../Context/LayoutContext'
+// import { LayoutContext } from '../Context/LayoutContext'
+import { LayoutContextNew } from '../Context/LayoutContextNew';
+import {MainContextNew} from "../Context/mainContext";
 
 
 const CardName = () => {
 
-    const context = useContext(mainContext);
-    const { nightMode, night, day } = useContext(LayoutContext); 
+    const context = useContext(MainContextNew);
+    const { nightMode, night, day } = useContext(LayoutContextNew); 
 
     console.log("nightMode", night);
 
